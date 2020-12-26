@@ -14,24 +14,7 @@ html{
 }
 
 a{
-    text-decoration: none;
     color: inherit;
-}
-
-/* Custom Scroll Bar */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
 }
 
 /* All similar content styling codes */
@@ -232,7 +215,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 50%;
 }
 .about .about-content .right{
     width: 55%;
@@ -540,6 +523,41 @@ section .title::after{
 .contact .right form .button button:hover{
     color: crimson;
     background: none;
+}
+.contact .myicons{
+    margin-top: 6%;
+    text-align: center;
+}
+
+.contact .myicons i{
+    font-size: 2rem;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.contact .myicons .github:hover{
+    color: #000;
+}
+
+.contact .myicons .facebook:hover{
+    color: #046FE5;
+}
+
+.contact .myicons .mail:hover{
+    color: crimson;
+}
+
+.contact .myicons .twitter:hover{
+    color: #1DA1F2;
+}
+
+.contact .myicons .linkedin:hover{
+    color: #0A66C2;
+}
+
+.contact .myicons .insta:hover{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    border-radius: 10px;
 }
 
 
