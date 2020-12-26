@@ -1,0 +1,184 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+section{
+    padding: 50px 0;
+    min-height: 100vh;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* Projects section styling */
+
+.projects{
+    color:#fff;
+    background: #111;
+    font-family: 'Poppins', sans-serif;
+}
+.projects .serv-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects .title::before{
+    background: #fff;
+}
+.projects .title::after{
+    background: #111;
+    content: "What I did";
+}
+.projects .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 50px;
+}
+/* .projects .serv-content .card:hover{
+    background: crimson;
+} */
+.projects .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+/* .projects .serv-content .card:hover i{
+    color: #fff;
+} */
+.projects .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .serv-content .card .info{
+    text-align: justify;
+}
+.projects .serv-content .box .Bahubali{
+    color: crimson;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.projects .serv-content .card .box .git{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.projects .serv-content .card .box .git:hover{
+    color:#fff;
+}
+
+.projects .serv-content .card .box .live{
+    height: 50px;
+    width: 100px;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10%;
+}
+
+.projects .serv-content .card .box .live:hover{
+    color: crimson;
+    background: #fff;
+    border: none;
+}
+
+.projects .serv-content .card .box .watch{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .projects .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 690px) {
+    .projects .serv-content .card{
+        width: 100%;
+    }
+}
