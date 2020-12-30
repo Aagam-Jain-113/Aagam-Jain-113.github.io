@@ -266,7 +266,7 @@ section .title::after{
 }
 .projects .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    color: #000;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
@@ -274,11 +274,27 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
+.projects .serv-content .one{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/swasth.gif) center;
+    background-size: cover;
+}
+
+.projects .serv-content .two{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/aidzee.gif) center;
+    background-size: cover;
+}
+
+.projects .serv-content .three{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/bust.gif) center;
+    background-size: cover;
+}
+
 .projects .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.projects .serv-content .card:hover .box{
+.projects .serv-content .card:hover{
     transform: scale(1.05);
+    opacity: 1.0;
 }
 .projects .serv-content .card i{
     font-size: 50px;
@@ -290,6 +306,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: crimson
 }
 .projects .serv-content .card .info{
     text-align: justify;
