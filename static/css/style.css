@@ -365,7 +365,7 @@ section .title::after{
 .skills .title::after{
     content: "What I know";
 }
-.skills .skills-content .column{
+/* .skills .skills-content .column{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
@@ -392,8 +392,27 @@ section .title::after{
 .skills .skills-content .left .bars p{
     font-weight: 700; 
     font-size: 20px;
+} */
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
 }
 
+.container .box{
+    position: relative;
+    background: #fff;
+    padding: 20px 40px 20px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(241, 227, 227, 0.7);
+}
 
 /* Contact section styling */
 
