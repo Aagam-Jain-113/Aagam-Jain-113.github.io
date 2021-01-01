@@ -1,4 +1,5 @@
 /*  import google fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -16,25 +17,11 @@ a{
     color: inherit;
 }
 
-/* custom scroll bar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
 section{
     padding: 50px 0;
     min-height: 100vh;
 }
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -50,6 +37,7 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 section .title::before{
     content: "";
     position: absolute;
@@ -60,6 +48,7 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
+
 section .title::after{
     position: absolute;
     bottom: -8px;
@@ -71,26 +60,30 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* Projects section styling */
+/* Section styling */
 
 .projects{
     color:#fff;
     background: #111;
     font-family: 'Poppins', sans-serif;
 }
+
 .projects .serv-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
 .projects .title::before{
     background: #fff;
 }
+
 .projects .title::after{
     background: #111;
     content: "What I did";
 }
+
 .projects .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -101,31 +94,31 @@ section .title::after{
     transition: all 0.3s ease;
     margin-top: 50px;
 }
-/* .projects .serv-content .card:hover{
-    background: crimson;
-} */
+
 .projects .serv-content .card .box{
     transition: all 0.3s ease;
 }
+
 .projects .serv-content .card:hover .box{
     transform: scale(1.05);
 }
+
 .projects .serv-content .card i{
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-/* .projects .serv-content .card:hover i{
-    color: #fff;
-} */
+
 .projects .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 .projects .serv-content .card .info{
     text-align: justify;
 }
+
 .projects .serv-content .box .Bahubali{
     color: crimson;
     text-align: center;
@@ -139,7 +132,7 @@ section .title::after{
 }
 
 .projects .serv-content .card .box .git:hover{
-    color:#fff;
+    color:#000;
 }
 
 .projects .serv-content .card .box .live{
@@ -159,12 +152,51 @@ section .title::after{
 
 .projects .serv-content .card .box .live:hover{
     color: crimson;
-    background: #fff;
-    border: none;
+    background: transparent;
 }
 
-.projects .serv-content .card .box .watch{
+.projects .serv-content .card .box .watch,.projects .serv-content .card .box .home{
     font-size: 25px;
+}
+
+.projects .serv-content .one{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/swasth.gif) center;
+    background-size: cover;
+    color: #000;
+}
+
+.projects .serv-content .two{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/aidzee.gif) center;
+    background-size: cover;
+    color: #000;
+}
+
+.projects .serv-content .three{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/bust.gif) center;
+    background-size: cover;
+    color: #000;
+}
+
+.projects .serv-content .four{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/bahubali.gif) center;
+    background-size: cover;
+    color: #000;
+}
+
+.projects .serv-content .five{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/me.gif) center;
+    background-size: cover;
+    color: #000;
+}
+
+.projects .serv-content .six{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/more.gif) center;
+    background-size: cover;
+    color: #000;
+}
+.projects .serv-content .card .box a:hover{
+    text-decoration: underline;
+    color: crimson;
 }
 
 @media screen and (max-width: 947px){
