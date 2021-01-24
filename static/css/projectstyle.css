@@ -187,13 +187,34 @@ section .title::after{
     background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/me.gif) center;
     background-size: cover;
     color: #000;
+    padding: 2.5%;
 }
 
 .projects .serv-content .six{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/tic-tac-toe.gif) center;
+    background-size: cover;
+    color: #000;
+    padding: 3.5%;
+}
+
+.projects .serv-content .seven{
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/emoji.gif) center;
+    background-size: cover;
+    color: #000;
+    padding: 4%;
+}
+
+.projects .serv-content .eight{
     background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/more.gif) center;
     background-size: cover;
     color: #000;
+    padding: 5%;
 }
+
+.emoji{
+    font-size: 50px;
+}
+
 .projects .serv-content .card .box a:hover{
     text-decoration: underline;
     color: crimson;
