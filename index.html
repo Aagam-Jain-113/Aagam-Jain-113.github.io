@@ -7,9 +7,11 @@
     <title>Aagam Jain</title>
     <link rel="stylesheet" href="./static/css/style.css">
     <link rel="icon" href="./static/icon/A.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -58,10 +60,10 @@
             <h2 class="title">
                 About me</h2>
             <div class="about-content">
-                <div class="column left">
+                <div class="column left" data-aos="fade-right">
                     <img src="./static/img/Aagam.jpg" alt="Profile Pic">
                 </div>
-                <div class="column right">
+                <div class="column right" data-aos="fade-left">
                     <div class="text">
                         I'm Aagam and I'm a <span class="typing-2"></span>
                     </div>
@@ -86,7 +88,7 @@
             <h2 class="title">
                 My Projects
             </h2>
-            <div class="serv-content">
+            <div class="serv-content" data-aos="fade-up">
                 <div class="card one">
                     <div class="box">
                         <i class="fas fa-laptop-medical"></i>
@@ -147,7 +149,7 @@
             <h2 class="title">
                 My skills</h2>
             <div class="skills-content">
-                <div class="container">
+                <div class="container" data-aos="fade-up">
                     <div class="box">
                         <img height="50px" src="https://cdn.worldvectorlogo.com/logos/html-5.svg" alt="HTML Logo">
                         <h2>HTML</h2>
@@ -259,7 +261,7 @@
                     </form>
                 </div>
             </div>
-            <div class="myicons">
+            <div class="myicons" data-aos="fade-up">
                 <a href="https://github.com/Aagam-Jain-113"><i class="fab fa-github github"></i></a>
                 <a href="mailto:aagamjain113@gmail.com"><i class="fa fa-envelope mail"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100008285603080"><i
@@ -278,6 +280,14 @@
             reserved.</span>
     </footer>
     <script src="./static/js/script.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: "1500",
+                delay: "20",
+            }
+        );
+    </script>
 </body>
 
 </html>
