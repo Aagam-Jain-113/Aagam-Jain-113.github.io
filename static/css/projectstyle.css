@@ -175,6 +175,7 @@ section .title::after{
     background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/bust.gif) center;
     background-size: cover;
     color: #000;
+    padding: 2.6%;
 }
 
 .projects .serv-content .four{
@@ -184,37 +185,38 @@ section .title::after{
 }
 
 .projects .serv-content .five{
-    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/emoji.gif) center;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/Testimonial.png) center;
     background-size: cover;
     color: #000;
-    padding: 2.5%;
+    padding: 2.2%;
 }
 
 .projects .serv-content .six{
-    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/tic-tac-toe.gif) center;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/FAQ.png) center;
     background-size: cover;
     color: #000;
     padding: 3.5%;
 }
 
 .projects .serv-content .seven{
-    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/bahubali.gif) center;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/Pricegrid.png) center;
     background-size: cover;
     color: #000;
+    padding: 3.5%;
 }
 
 .projects .serv-content .eight{
-    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/me.gif) center;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/Social-proof.png) center;
     background-size: cover;
     color: #000;
-    padding: 2.5%;
+    padding: 3.5%;
 }
 
 .projects .serv-content .nine{
     background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/more.gif) center;
     background-size: cover;
     color: #000;
-    padding: 5%;
+    padding: 7.5%;
 }
 
 .emoji{
