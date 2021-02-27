@@ -316,12 +316,12 @@ section .title::after{
 }
 
 .projects .serv-content .one{
-    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/swasth.gif) center;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/aidzee.gif) center;
     background-size: cover;
 }
 
 .projects .serv-content .two{
-    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/aidzee.gif) center;
+    background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)),url(../img/swasth.gif) center;
     background-size: cover;
 }
 
