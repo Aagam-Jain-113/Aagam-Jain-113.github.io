@@ -70,7 +70,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #F4675D;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -90,7 +90,7 @@ section .title::after{
 
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: #F4675D;
 }
 
 .navbar .max-width{
@@ -106,7 +106,7 @@ section .title::after{
 }
 
 .navbar .logo a span{
-    color: crimson;
+    color: #F4675D;
     transition: all 0.3s ease;
 }
 
@@ -129,7 +129,7 @@ section .title::after{
 }
 
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #F4675D;
 }
 
 .navbar.sticky .menu li a:hover{
@@ -150,7 +150,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #F4675D;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -191,6 +191,7 @@ section .title::after{
 
 .home .max-width{
     margin: auto 0 auto 30px;
+    flex: 0.5;
 }
 
 .home .home-content .text-1{
@@ -209,26 +210,34 @@ section .title::after{
 }
 
 .home .home-content .text-3 span{
-    color: crimson;
+    color: #F4675D;
     font-weight: 500;
 }
 
 .home .home-content a{
     display: inline-block;
-    background: crimson;
+    background: #F4675D;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #F4675D;
     transition: all 0.3s ease;
 }
 
 .home .home-content a:hover{
-    color: crimson;
+    color: #F4675D;
     background: none;
+}
+
+.hello-image{
+    display: flex;
+    flex: 0.5;
+}
+.hello-vector{
+    height: 100%;
 }
 
 
@@ -260,7 +269,7 @@ section .title::after{
 }
 
 .about .about-content .right .text span{
-    color: crimson;
+    color: #F4675D;
 }
 
 .about .about-content .right p{
@@ -269,14 +278,14 @@ section .title::after{
 
 .about .about-content .right a{
     display: block;
-    background: crimson;
+    background: #F4675D;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin: 20px auto 0 auto;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #F4675D;
     transition: all 0.3s ease;
     cursor: pointer;
     text-align: center;
@@ -284,7 +293,7 @@ section .title::after{
 }
 
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #F4675D;
     background: none;
 }
 
@@ -341,7 +350,7 @@ section .title::after{
 
 .projects .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #F4675D;
     transition: color 0.3s ease;
 }
 
@@ -349,7 +358,7 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-    color: crimson
+    color: #F4675D
 }
 
 .projects .serv-content .card .info{
@@ -368,8 +377,8 @@ section .title::after{
 .projects .serv-content .card .box .live{
     height: 50px;
     width: 100px;
-    border: 2px solid crimson;
-    background: crimson;
+    border: 2px solid #F4675D;
+    background: #F4675D;
     color: #fff;
     outline: none;
     font-size: 20px;
@@ -381,26 +390,26 @@ section .title::after{
 }
 
 .projects .serv-content .card .box .live:hover{
-    color: crimson;
+    color: #F4675D;
     background: transparent;
 }
 
 .projects .serv-content .more-projects{
     display: flex;
-    background: crimson;
+    background: #F4675D;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin: 20px auto 0 auto;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #F4675D;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .projects .serv-content .more-projects:hover{
-    color: crimson;
+    color: #F4675D;
     background: transparent;
 }
 
@@ -429,6 +438,10 @@ section .title::after{
     border-radius: 20px;
     box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
                 -6px -6px 10px -1px rgba(241, 227, 227, 0.7);
+}
+
+.skills .container .box img{
+    height: 50px;
 }
 
 
@@ -478,7 +491,7 @@ section .title::after{
 
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: #F4675D;
 }
 
 .contact .contact-content .info .head{
@@ -486,7 +499,7 @@ section .title::after{
 }
 
 .contact .contact-content .info .sub-title{
-    color: crimson;
+    color: #F4675D;
 }
 
 .contact .right form .fields{
@@ -544,8 +557,8 @@ section .title::after{
 .contact .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid crimson;
-    background: crimson;
+    border: 2px solid #F4675D;
+    background: #F4675D;
     color: #fff;
     outline: none;
     font-size: 20px;
@@ -556,7 +569,7 @@ section .title::after{
 }
 
 .contact .right form .button button:hover{
-    color: crimson;
+    color: #F4675D;
     background: none;
 }
 
@@ -580,7 +593,7 @@ section .title::after{
 }
 
 .contact .myicons .mail:hover{
-    color: crimson;
+    color: #F4675D;
 }
 
 .contact .myicons .twitter:hover{
@@ -607,7 +620,7 @@ footer{
 }
 
 footer span a{
-    color: crimson;
+    color: #F4675D;
     text-decoration: none;
 }
 
@@ -634,11 +647,6 @@ footer span a:hover{
     .home .max-width{
         margin-left: 0px;
     }
-    
-    .hello-vector{
-        width: 100%;
-        height: 400px;
-    }
 
     .menu-btn{
         display: block;
@@ -655,7 +663,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: crimson;
+        background: #F4675D;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
@@ -719,9 +727,6 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
-    .hello-vector{
-        height: 300px;
-    }
 
     .max-width{
         padding: 0 23px;
@@ -749,8 +754,12 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    .home{
+        display: block;
+    }
+
     .hello-vector{
-        display: none;
+        width: 100%;
     }
 
     .home .home-content .text-2{

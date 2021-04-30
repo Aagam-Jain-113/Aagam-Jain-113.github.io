@@ -54,7 +54,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #F4675D;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -105,7 +105,7 @@ section .title::after{
 
 .projects .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #F4675D;
     transition: color 0.3s ease;
 }
 
@@ -120,7 +120,7 @@ section .title::after{
 }
 
 .projects .serv-content .box .Bahubali{
-    color: crimson;
+    color: #F4675D;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
@@ -138,8 +138,8 @@ section .title::after{
 .projects .serv-content .card .box .live{
     height: 50px;
     width: 100px;
-    border: 2px solid crimson;
-    background: crimson;
+    border: 2px solid #F4675D;
+    background: #F4675D;
     color: #fff;
     outline: none;
     font-size: 20px;
@@ -151,7 +151,7 @@ section .title::after{
 }
 
 .projects .serv-content .card .box .live:hover{
-    color: crimson;
+    color: #F4675D;
     background: transparent;
 }
 
@@ -237,7 +237,7 @@ section .title::after{
 
 .projects .serv-content .card .box a:hover{
     text-decoration: underline;
-    color: crimson;
+    color: #F4675D;
 }
 
 @media screen and (max-width: 947px){
