@@ -13,7 +13,7 @@ const Skills = () => {
                 <h1 className="flex text-lg font-bold">
                     Programming Languages
                 </h1>
-                <div className="flex flex-wrap items-center leading-7">
+                <div className="flex flex-wrap items-center leading-7 dark:text-black">
                     <div className="flex items-center px-2 mb-4 ml-2 bg-blue-300 rounded-2xl">
                         <SiJavascript size={17} />
                         <p className="ml-2">JavaScript</p>
@@ -40,7 +40,7 @@ const Skills = () => {
                 <h1 className="flex mr-4 text-lg font-bold">
                     Frameworks
                 </h1>
-                <div className="flex flex-wrap items-center leading-7">
+                <div className="flex flex-wrap items-center leading-7 dark:text-black">
                     <div className="flex flex-wrap items-center px-2 mb-4 ml-2 bg-blue-300 w-fitcontent rounded-2xl">
                         <SiReact size={17} />
                         <p className="ml-2">React.js</p>
@@ -71,7 +71,7 @@ const Skills = () => {
                 <h1 className="flex mr-4 text-lg font-bold">
                     Tools
                 </h1>
-                <div className="flex flex-wrap items-center leading-7 ">
+                <div className="flex flex-wrap items-center leading-7 dark:text-black">
                     <div className="flex flex-wrap items-center px-2 mb-4 ml-2 bg-blue-300 w-fitcontent rounded-2xl">
                         <SiFirebase size={17} />
                         <p className="ml-2">Firebase</p>

@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 const Sidebar = () => {
     const { theme, setTheme } = useTheme('');
-    const icon = theme === 'dark' ? <CgSun size={25} /> : <HiMoon size={25} />;
+    const icon = theme === 'light' ?  <HiMoon size={25} /> : <CgSun size={25} />;
     const changeTheme = () => {
         setTheme(theme === "light" ? "dark" : "light");
     }
