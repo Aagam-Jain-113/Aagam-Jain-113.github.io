@@ -27,8 +27,16 @@ const Projects = () => (
         </Head>
         <Carousel autoPlay showIndicators={false}  >
             <div>
+                <img alt="Website Preview" src="/styleclub.png" />
+                <ProjectFrame app_name="Style Club" app_desc="An e-commerce shopping website." project__link="https://style-club.vercel.app" git__link="https://github.com/Aagam-Jain-113/style-club" />
+            </div>
+            <div>
                 <img alt="Website Preview" src="/invoice.png" />
                 <ProjectFrame app_name="Invoice Generator" app_desc="A web-app in which you can generate your Invoices within a few minutes." project__link="https://aagam-jain-113.github.io/invoice-generator" git__link="https://github.com/Aagam-Jain-113/invoice-generator" />
+            </div>
+            <div>
+                <img alt="Website Preview" src="/whatsup.png" />
+                <ProjectFrame app_name="Whatsup Chat" app_desc="A clone-app of whatsapp." project__link="https://whatsupchat.netlify.app/" git__link="https://github.com/Aagam-Jain-113/whatsapp-clone" />
             </div>
             <div>
                 <img alt="Website Preview" src="/aidzee.png" />
