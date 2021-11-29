@@ -1,5 +1,4 @@
 import 'tailwindcss/tailwind.css';
-import '../styles/index.css';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import { ThemeProvider } from 'next-themes';
