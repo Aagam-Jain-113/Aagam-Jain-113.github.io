@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Me from '../assets/Images/profile-img.png'
 import { motion } from 'framer-motion'
 
 const Box = styled(motion.div)`
@@ -25,16 +24,6 @@ const SubBox = styled.div`
 width: 50%;
 position: relative;
 display: flex;
-
-.pic{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,0%);
-    width: 100%;
-    height: auto;
-    z-index: 5;
-}
 `
 
 const Text = styled.div`
@@ -54,6 +43,10 @@ justify-content: space-evenly;
 `
 
 function Intro() {
+
+    React.useEffect(()=>{
+        import ("@lottiefiles/lottie-player");
+    })
     return (
         <Box initial={{ height: 0 }}
             animate={{ height: '55vh' }}
@@ -70,7 +63,14 @@ function Intro() {
                 <motion.div initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2, delay: 1.5 }}>
-                    <img className="pic" src={Me} alt="" />
+                    <lottie-player
+                        id="firstLottie"
+                        autoplay
+                        loop
+                        mode="normal"
+                        src="https://assets6.lottiefiles.com/packages/lf20_1LhsaB.json"
+                        className="block mx-auto w-full"
+                    />
                 </motion.div>
             </SubBox>
         </Box>
