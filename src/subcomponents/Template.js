@@ -8,7 +8,7 @@ import SocialIcons from './SocialIcons'
 
 const Contact = styled.a`
 color: ${props => props.theme.text};
-position: absolute;
+position: fixed;
 top: 2rem;
 right: calc(1rem + 2vw);
 text-decoration: none;
@@ -17,7 +17,7 @@ font-size: 1.25rem;
 `
 const Project = styled(NavLink)`
 color: ${props => props.theme.text};
-position: absolute;
+position: fixed;
 top: 50%;
 transform: rotate(90deg) translate(-50%,-50%);
 right: calc(1rem + 2vw);
@@ -28,7 +28,7 @@ font-size: 1.25rem;
 
 const Bottombar = styled.div`
 color: ${props => props.theme.text};
-position: absolute;
+position: fixed;
 bottom: 1rem;
 left: 0;
 right: 0;
@@ -58,6 +58,14 @@ function Template(props) {
 
             <Contact target="_blank" href="mailto:aagamjain113@gmail.com">
                 <motion.h2
+                    initial={{
+                        y: -200,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 }
+                    }}
+                    animate={{
+                        y: 0,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 }
+                    }}
                     whileHover={{ scale: 1.1 }}
                     WhileTap={{ scale: 0.9 }}
                 >
@@ -67,6 +75,14 @@ function Template(props) {
 
             <Project to="/projects">
                 <motion.h2
+                    initial={{
+                        y: -200,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 }
+                    }}
+                    animate={{
+                        y: 0,
+                        transition: { type: 'spring', duration: 1.5, delay: 1 }
+                    }}
                     whileHover={{ scale: 1.1 }}
                     WhileTap={{ scale: 0.9 }}
                 >
@@ -77,6 +93,14 @@ function Template(props) {
             <Bottombar>
                 <About to="/about" click={props.open}>
                     <motion.h2
+                        initial={{
+                            y: 200,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
+                        animate={{
+                            y: 0,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
                         whileHover={{ scale: 1.1 }}
                         WhileTap={{ scale: 0.9 }}
                     >
@@ -86,6 +110,14 @@ function Template(props) {
 
                 <Skills to="/skills">
                     <motion.h2
+                        initial={{
+                            y: 200,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
+                        animate={{
+                            y: 0,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
                         whileHover={{ scale: 1.1 }}
                         WhileTap={{ scale: 0.9 }}
                     >
