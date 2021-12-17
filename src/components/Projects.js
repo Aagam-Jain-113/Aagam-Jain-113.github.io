@@ -141,6 +141,9 @@ left: calc(10rem + 15vw);
 height: 40vh;
 display: flex;
 color: white;
+@media (max-width: 600px){
+    left: 0;
+}
 `
 
 function Projects() {

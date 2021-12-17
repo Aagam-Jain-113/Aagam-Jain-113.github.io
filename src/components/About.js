@@ -7,7 +7,7 @@ import resume from '../assets/resume/Aagam_Jain_Resume.pdf'
 
 const HomeContainer = styled.div`
 background: ${props => props.theme.body};
-height: 100vh;
+min-height: 100vh;
 width: 100vw;
 position: relative;
 overflow: hidden;
@@ -20,6 +20,9 @@ h2,h3,h4,h5{
 const Container = styled.div`
 padding: 2rem;
 display: flex;
+@media (max-width: 600px){
+    flex-direction: column;
+}
 `
 
 const Box = styled(motion.div)`
@@ -34,6 +37,10 @@ justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 z-index: 1;
+@media (max-width: 600px){
+    display: block;
+    margin-top: 10%;
+}
 `
 
 const Speech = styled(motion.div)`
@@ -153,7 +160,7 @@ function AboutPage() {
 
                     <motion.img initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ duration: 1, delay: 1.2 }} src={Profileimg} alt=" " className="mt-28 block h-80 rounded-full w-80 transform duration-500 hover:scale-110" />
+                        transition={{ duration: 1, delay: 1.2 }} src={Profileimg} alt=" " className="mt-28 block h-72 md:h-80 mx-auto rounded-full w-72 md:w-80 transform duration-500 hover:scale-110" />
                 </Container>
             </HomeContainer>
         </div>

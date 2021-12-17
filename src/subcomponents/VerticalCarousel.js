@@ -3,7 +3,6 @@ import { AiOutlineArrowUp, AiOutlineArrowDown } from 'react-icons/ai';
 import styled from 'styled-components';
 import invoice from '../assets/Images/invoice.png'
 import styleClub from '../assets/Images/styleclub.png';
-import { Slide, Slider, CarouselProvider } from 'pure-react-carousel'
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 

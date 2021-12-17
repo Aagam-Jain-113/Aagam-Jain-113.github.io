@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const HomeContainer = styled.div`
 background: ${props => props.theme.body};
-height: 100vh;
+min-height: 100vh;
 width: 100vw;
 position: relative;
 overflow: hidden;
@@ -46,6 +46,23 @@ display: flex;
 align-items: center;
 justify-content: center;
 `
+const MainFlex = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+@media (max-width: 600px){
+    display: block;
+}
+`
+
+const Skillpic = styled(motion.img)`
+@media (max-width: 600px){
+    width: 80%;
+    z-index: 99;
+    position: relative;
+    margin-top: 20px;
+}
+`
 
 const Center = styled.p`
 position: absolute;
@@ -73,7 +90,7 @@ function Skills() {
         <HomeContainer>
             <Container>
                 <Template />
-                <Flex className='space-x-20'>
+                <MainFlex className='space-x-10 lg:space-x-20'>
                     <div>
                         <Flex className='text-5xl space-x-4'>
                             <motion.div
@@ -81,14 +98,14 @@ function Skills() {
                                 initial={{ opacity: 0 }}
                                 animate={{ y: 30, opacity: 1 }}
                             >
-                                <SiHtml5 />
+                                <SiReact />
                             </motion.div>
                             <motion.div
                                 transition={{ type: "spring", stiffness: 200, delay: 0.25 }}
                                 initial={{ opacity: 0 }}
                                 animate={{ y: 30, opacity: 1 }}
                             >
-                                <SiCss3 />
+                                <SiNextdotjs />
                             </motion.div>
                             <motion.div
                                 transition={{ type: "spring", stiffness: 200, delay: 0.5 }}
@@ -103,7 +120,7 @@ function Skills() {
                                 initial={{ opacity: 0 }}
                                 animate={{ y: 30, opacity: 1 }}
                             >
-                                <SiPython />
+                                <SiTailwindcss />
                             </motion.div>
                         </Flex>
                         <Flex className='text-5xl my-10 space-x-4'>
@@ -112,28 +129,28 @@ function Skills() {
                                 initial={{ opacity: 0 }}
                                 animate={{ y: 30, opacity: 1 }}
                             >
-                                <SiReact />
+                                <SiHtml5 />
                             </motion.div>
                             <motion.div
                                 transition={{ type: "spring", stiffness: 200, delay: 1.25 }}
                                 initial={{ opacity: 0 }}
                                 animate={{ y: 30, opacity: 1 }}
                             >
-                                <SiC />
+                                <SiCss3 />
                             </motion.div>
                             <motion.div
                                 transition={{ type: "spring", stiffness: 200, delay: 1.5 }}
                                 initial={{ opacity: 0 }}
                                 animate={{ y: 30, opacity: 1 }}
                             >
-                                <SiNextdotjs />
+                                <SiPython />
                             </motion.div>
                             <motion.div
                                 transition={{ type: "spring", stiffness: 200, delay: 1.75 }}
                                 initial={{ opacity: 0 }}
                                 animate={{ y: 30, opacity: 1 }}
                             >
-                                <SiNodedotjs />
+                                <SiC />
                             </motion.div>
                         </Flex>
                         <Flex className='text-5xl space-x-4'>
@@ -142,7 +159,7 @@ function Skills() {
                                 initial={{ opacity: 0 }}
                                 animate={{ y: 30, opacity: 1 }}
                             >
-                                <SiTailwindcss />
+                                <SiNodedotjs />
                             </motion.div>
                             <motion.div
                                 transition={{ type: "spring", stiffness: 200, delay: 2.25 }}
@@ -167,8 +184,8 @@ function Skills() {
                             </motion.div>
                         </Flex>
                     </div>
-                    <motion.img transition={{type: "spring"}} initial={{ opacity: 0 }} animate={{ y: 30, opacity: 1 }} src={Growth} alt="Growth" />
-                </Flex>
+                    <Skillpic transition={{ type: "spring" }} initial={{ opacity: 0 }} animate={{ y: 30, opacity: 1 }} src={Growth} alt="Growth" />
+                </MainFlex>
                 <Center>Skills</Center>
             </Container>
         </HomeContainer>

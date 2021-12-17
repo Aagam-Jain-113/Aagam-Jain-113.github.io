@@ -1,8 +1,9 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { darkTheme } from '../components/Themes'
 
-const LogoName = styled.h1`
+const LogoName = styled(NavLink)`
 color: ${props=> props.color === "dark" ? darkTheme.text : darkTheme.body};
 display: inline-block;
 position: fixed;
@@ -15,7 +16,7 @@ z-index: 3;
 
 function Logo(props) {
     return (
-        <LogoName color={props.theme}>
+        <LogoName to="/" color={props.theme}>
             AJ
         </LogoName>
     )
