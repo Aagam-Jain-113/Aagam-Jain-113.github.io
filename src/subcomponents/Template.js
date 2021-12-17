@@ -14,6 +14,10 @@ right: calc(1rem + 2vw);
 text-decoration: none;
 font-weight: bolder;
 font-size: 1.25rem;
+z-index: 10;
+@media (max-width: 600px){
+    color: ${props => props.click ? props.theme.body : "#000"};
+    }
 `
 const Project = styled(NavLink)`
 color: ${props => props.theme.text};
@@ -24,6 +28,11 @@ right: calc(1rem + 2vw);
 text-decoration: none;
 font-weight: bolder;
 font-size: 1.25rem;
+z-index: 10;
+@media (max-width: 600px){
+    color: ${props => props.click ? props.theme.body : "#000"};
+    top: 45%;
+}
 `
 
 const Bottombar = styled.div`
@@ -43,6 +52,9 @@ z-index: 3;
 
 const About = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
+@media (max-width: 600px){
+    color: initial;
+}
 `
 
 const Skills = styled(NavLink)`
@@ -56,15 +68,15 @@ function Template(props) {
             <Logo theme={props.open ? "dark" : "light"} />
             <SocialIcons theme={props.open ? "dark" : "light"} />
 
-            <Contact target="_blank" href="mailto:aagamjain113@gmail.com">
+            <Contact target="_blank" click={props.open} href="mailto:aagamjain113@gmail.com">
                 <motion.h2
                     initial={{
                         y: -200,
-                        transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        transition: { type: 'spring', duration: 1.5 }
                     }}
                     animate={{
                         y: 0,
-                        transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        transition: { type: 'spring', duration: 1.5 }
                     }}
                     whileHover={{ scale: 1.1 }}
                     WhileTap={{ scale: 0.9 }}
@@ -73,15 +85,15 @@ function Template(props) {
                 </motion.h2>
             </Contact>
 
-            <Project to="/projects">
+            <Project to="/projects" click={props.open} >
                 <motion.h2
                     initial={{
                         y: -200,
-                        transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        transition: { type: 'spring', duration: 1.5 }
                     }}
                     animate={{
                         y: 0,
-                        transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        transition: { type: 'spring', duration: 1.5 }
                     }}
                     whileHover={{ scale: 1.1 }}
                     WhileTap={{ scale: 0.9 }}
@@ -95,11 +107,11 @@ function Template(props) {
                     <motion.h2
                         initial={{
                             y: 200,
-                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            transition: { type: 'spring', duration: 1.5 }
                         }}
                         animate={{
                             y: 0,
-                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            transition: { type: 'spring', duration: 1.5 }
                         }}
                         whileHover={{ scale: 1.1 }}
                         WhileTap={{ scale: 0.9 }}
@@ -112,11 +124,11 @@ function Template(props) {
                     <motion.h2
                         initial={{
                             y: 200,
-                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            transition: { type: 'spring', duration: 1.5 }
                         }}
                         animate={{
                             y: 0,
-                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            transition: { type: 'spring', duration: 1.5 }
                         }}
                         whileHover={{ scale: 1.1 }}
                         WhileTap={{ scale: 0.9 }}

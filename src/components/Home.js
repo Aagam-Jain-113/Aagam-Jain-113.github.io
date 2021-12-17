@@ -62,6 +62,20 @@ width: ${props => props.click ? "50%" : "0%"};
 height: ${props => props.click ? "100%" : "0%"};
 z-index: 1;
 transition: height 0.5s ease, width 1s ease 0.5s;
+@media (max-width: 600px){
+    right: 0%;
+    width: ${props => props.click ? "100%" : "0%"};
+    top: -50%;
+}
+`
+
+const Yin = styled.svg`
+width: ${props => props.open ? "100px" : "150px"};
+height: ${props => props.open ? "100px" : "150px"};
+@media (max-width: 600px){
+    width: ${props => props.open ? "60px" : "100px"};
+    height: ${props => props.open ? "60px" : "100px"};
+}
 `
 
 function Home() {
@@ -74,7 +88,7 @@ function Home() {
                 <Template open={open} />
                 <Darkdiv click={open} />
                 <Center click={open}>
-                    <svg onClick={() => setOpen(!open)} aria-hidden="true" width={open ? 100 : 150} height={open ? 100 : 150} focusable="false" data-prefix="fas" data-icon="yin-yang" class="svg-inline--fa fa-yin-yang fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 376c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm0-128c-53.02 0-96 42.98-96 96s42.98 96 96 96c-106.04 0-192-85.96-192-192S141.96 64 248 64c53.02 0 96 42.98 96 96s-42.98 96-96 96zm0-128c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z"></path></svg>
+                    <Yin onClick={() => setOpen(!open)} aria-hidden="true" open={open} focusable="false" data-prefix="fas" data-icon="yin-yang" class="svg-inline--fa fa-yin-yang fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111.03 8 0 119.03 0 256s111.03 248 248 248 248-111.03 248-248S384.97 8 248 8zm0 376c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm0-128c-53.02 0-96 42.98-96 96s42.98 96 96 96c-106.04 0-192-85.96-192-192S141.96 64 248 64c53.02 0 96 42.98 96 96s-42.98 96-96 96zm0-128c-17.67 0-32 14.33-32 32s14.33 32 32 32 32-14.33 32-32-14.33-32-32-32z"></path></Yin>
                     <span>Click here</span>
                 </Center>
             </Container>
