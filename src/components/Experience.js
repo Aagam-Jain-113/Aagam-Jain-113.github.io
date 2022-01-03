@@ -8,7 +8,7 @@ function Experience() {
     return (
         <div className='min-h-screen mt-24'>
             <p className='text-3xl md:text-5xl text-center font-roboto text-green-600 font-semibold'>Experience</p>
-            <div className='mt-12'>
+            <div className='max-w-screen-lg px-10 mt-12 lg:px-0 font-poppins mx-auto'>
                 <VerticalTimeline>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
