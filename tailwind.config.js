@@ -7,6 +7,14 @@ module.exports = {
       fontFamily: {
         "roboto": "Roboto",
         "poppins": "Poppins",
+      },
+      width: {
+        90: "360px",
+      },
+      inset: {
+        16: "66px",
+        24 : "100px",
+        18: "72px",
       }
     },
   },
