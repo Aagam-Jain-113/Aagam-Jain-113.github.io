@@ -9,12 +9,12 @@ module.exports = {
         "poppins": "Poppins",
       },
       width: {
-        73: "73%",
+        74: "74%",
       },
       inset: {
         16: "66px",
         24: "100px",
-        14: "20%",
+        21: "20.5%",
         15: "13%",
       },
       height: {

@@ -62,7 +62,7 @@ function Projects() {
                     </div>
                     <div className='md:col-span-1 relative col-span-2'>
                         <img src={Desktop} alt="Desktop" className='mx-auto w-full' />
-                        <img src={project} alt="Project Preview" className='absolute rounded-sm top-14 w-73 h-41 right-15' />
+                        <img src={project} alt="Project Preview" className='absolute rounded-sm top-21 w-74 h-41 right-15' />
                     </div>
                 </div>
             </div>
