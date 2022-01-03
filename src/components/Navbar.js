@@ -3,9 +3,21 @@ import { Twirl as Hamburger } from 'hamburger-react'
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [active, setActive] = useState(false);
+
+    const changeBackground = () => {
+        if (window.scrollY >= 100) {
+            setActive(true);
+        }
+        else {
+            setActive(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
 
     return (
-        <nav className='py-6 fixed z-50 font-roboto w-full top-0'>
+        <nav className={'py-6 fixed z-50 font-roboto w-full top-0 duration-500  '+(active ? "bg-white" : "bg-transparent")}>
             <div className='max-w-screen-lg flex flex-wrap items-center justify-between px-10 lg:px-0 mx-auto'>
                 <p className='text-3xl text-green-600 font-bold'>Aagam.</p>
                 <div className="md:hidden">
