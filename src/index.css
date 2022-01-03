@@ -32,5 +32,6 @@
 }
 
 .project{
-    width: 360px;    
+    min-width: 300px;
+    max-height: 250px;
 }
