@@ -9,10 +9,10 @@ import StyleClub from '../assets/styleclub.png'
 function Projects() {
     const [project, setProject] = React.useState(Aidzee)
     return (
-        <div className='mt-12 lg:mt-24'>
+        <div className='mt-12 lg:mt-24' id="projects">
             <p className='text-3xl md:text-5xl text-center font-roboto text-green-600 font-semibold'>Projects</p>
             <div className='max-w-screen-lg px-10 lg:px-0 font-poppins mx-auto'>
-                <div className='grid grid-cols-2 mt-10 md:gap-10 items-center'>
+                <div className='grid grid-cols-2 mt-12 lg:mt-24 md:gap-10 items-center'>
                     <div className='md:col-span-1 projects flex flex-row w-full overflow-scroll md:overflow-auto md:flex-col col-span-2'>
                         <div className='bg-green-500 mx-0 md:mx-4 project p-4 mt-1 rounded-xl' onClick={() => setProject(StyleClub)} onMouseEnter={() => setProject(StyleClub)}>
                             <p className='font-semibold text-2xl font-roboto'>Style Club</p>

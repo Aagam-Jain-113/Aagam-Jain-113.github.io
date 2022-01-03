@@ -5,10 +5,10 @@ import { PopupButton } from 'react-calendly'
 
 function Contact() {
     return (
-        <div className='min-h-screen mt-24'>
+        <div className='min-h-screen mt-24' id="contact">
             <p className='text-3xl md:text-5xl text-center font-roboto text-green-600 font-semibold'>Contact</p>
             <div className='max-w-screen-lg px-10 font-poppins mx-auto'>
-                <div className='bg-green-300 p-10 grid grid-cols-2 gap-10 mt-12 w-full rounded-lg shadow-2xl'>
+                <div className='bg-green-300 p-10 grid grid-cols-2 gap-10 mt-12 lg:mt-24 w-full rounded-lg shadow-2xl'>
                     <div className='col-span-2 md:col-span-1'>
                         <input type="text" className='w-full rounded-xl px-5 h-10 outline-none shadow-inner bg-green-400 text-white placeholder:text-white' placeholder='Name' />
                         <input type="email" className='w-full mt-4 rounded-xl px-5 h-10 outline-none shadow-inner bg-green-400 text-white placeholder:text-white' placeholder='Email' />
