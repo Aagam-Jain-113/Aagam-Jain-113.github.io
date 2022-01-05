@@ -4,9 +4,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        hero1: "#e8efee",
+        primary: "#303941",
+      },
       fontFamily: {
         "roboto": "Roboto",
         "poppins": "Poppins",
+        "inter":"Inter",
       },
       width: {
         74: "74%",

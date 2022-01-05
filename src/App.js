@@ -8,7 +8,7 @@ import Projects from './components/Projects';
 
 function App() {
   return (
-    <div className='bg-gradient-to-b from-green-50 via-green-200 to-green-400'>
+    <div>
       <div className='h-screen flex flex-col justify-center'>
         <Navbar />
         <Hero />

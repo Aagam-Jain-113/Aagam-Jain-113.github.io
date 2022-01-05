@@ -1,18 +1,18 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
+import Profile from '../assets/profile-pic.png'
 
 function Hero() {
     React.useEffect(() => {
         import("@lottiefiles/lottie-player");
     })
     return (
-        <div className="text-2xl font-roboto lg:text-5xl py-20 px-10 lg:px-0 w-full">
+        <div className="text-2xl font-inter bg-gradient-to-b text-primary from-hero1 to-white lg:text-4xl py-20 px-10 lg:px-0 w-full">
             <div className='max-w-screen-lg mx-auto'>
-                <div className='grid grid-cols-2 items-center justify-center'>
-                    <div className='col-span-2 sm:col-span-1'>
-                        <p>Hi,</p>
-                        <p>I'm <span className='text-4xl lg:text-6xl mt-4 font-medium text-green-600'>Aagam Jain,</span></p>
-                        <p className='mt-4'>
+                <div className='flex flex-col-reverse sm:grid grid-cols-3 pt-20 min-h-screen items-center justify-center'>
+                    <div className='col-span-3 sm:col-span-2 mr-0 mt-6 sm:mt-0 sm:mr-12'>
+                        <p>Hi, I'm <span className='text-4xl lg:text-5xl mt-4 font-medium'>Aagam Jain</span>🙏</p>
+                        <p className='mt-3 sm:mt-6'>
                             <Typewriter
                                 options={{
                                     strings: ['Web Developer', 'Designer', 'Freelancer'],
@@ -21,15 +21,20 @@ function Hero() {
                                 }}
                             />
                         </p>
+                        <div className='mt-3 sm:mt-6'>
+                            <p className='text-xl'>A Senior Year student pursuing Bachelor of Technology in Electronics and Communication from <span className='font-semibold'>BIT, Mesra.</span></p>
+                            <p className='text-xl mt-2'>A <span className='font-semibold'>Coder</span> who focuses on writing clean, elegant and efficient code.</p>
+                        </div>
                     </div>
-                    <div className='col-span-2 mt-6 sm:mt-0 sm:col-span-1'>
-                        <lottie-player
+                    <div className='col-span-3 mt-6 sm:mt-0 mx-auto sm:col-span-1'>
+                        {/* <lottie-player
                             id="firstLottie"
                             autoplay
                             loop
                             mode="normal"
                             src="https://assets6.lottiefiles.com/packages/lf20_1LhsaB.json"
-                        />
+                        /> */}
+                        <img src={Profile} alt="Profile" className='rounded-full w-3/4 sm:w-full mx-auto lg:mx-0 shadow-2xl' />
                     </div>
                 </div>
             </div>
