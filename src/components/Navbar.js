@@ -17,7 +17,7 @@ function Navbar() {
     window.addEventListener('scroll', changeBackground);
 
     return (
-        <nav className={'py-6 fixed z-50 font-inter w-full top-0 duration-300  ' + (active ? "bg-white" : "bg-transparent")}>
+        <nav className={'py-6 fixed z-50 w-full top-0 duration-300  ' + (active ? "bg-hero1 backdrop-blur-sm bg-opacity-70" : "bg-transparent")}>
             <div className='max-w-screen-lg flex flex-wrap items-center justify-between px-10 lg:px-0 mx-auto'>
                 <a href="#" className='text-3xl text-primary font-bold'>Aagam.</a>
                 <div className="md:hidden">
@@ -25,7 +25,7 @@ function Navbar() {
                 </div>
                 {isOpen ?
                     <div onClick={()=>setIsOpen(!isOpen)} className={'space-y-5 mt-1 py-4 bg-white text-primary text-sm text-center items-center justify-center flex flex-col w-full relative'}>
-                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
                         <a href="#experience">Experience</a>
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
@@ -33,7 +33,7 @@ function Navbar() {
                     :
                     <>
                         <div className='hidden md:flex text-primary font-semibold text-lg space-x-16'>
-                            <a href="#about">About</a>
+                            <a href="#skills">Skills</a>
                             <a href="#experience">Experience</a>
                             <a href="#projects">Projects</a>
                         </div>

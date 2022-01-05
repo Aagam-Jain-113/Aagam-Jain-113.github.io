@@ -1,5 +1,5 @@
 import React from 'react'
-import About from './components/About';
+import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Hero from './components/Hero';
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <Hero />
       </div>
-      <About />
+      <Skills />
       <Experience />
       <Projects />
       <Contact />
