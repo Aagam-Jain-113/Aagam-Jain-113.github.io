@@ -1,45 +1,37 @@
 import React from 'react'
 import { BsGithub, BsLinkedin, BsTwitter } from 'react-icons/bs'
 import { GoMail } from 'react-icons/go'
-import { PopupButton } from 'react-calendly'
+// import { PopupButton } from 'react-calendly'
 
 function Contact() {
     return (
-        <div className='min-h-screen mt-24' id="contact">
-            <p className='text-3xl md:text-5xl text-center font-roboto text-green-600 font-semibold'>Contact</p>
-            <div className='max-w-screen-lg px-10 font-poppins mx-auto'>
-                <div className='bg-green-300 p-10 grid grid-cols-2 gap-10 mt-12 lg:mt-24 w-full rounded-lg shadow-2xl'>
-                    <div className='col-span-2 md:col-span-1'>
-                        <input type="text" className='w-full rounded-xl px-5 h-10 outline-none shadow-inner bg-green-400 text-white placeholder:text-white' placeholder='Name' />
-                        <input type="email" className='w-full mt-4 rounded-xl px-5 h-10 outline-none shadow-inner bg-green-400 text-white placeholder:text-white' placeholder='Email' />
-                        <textarea className='w-full rounded-xl mt-4 p-5 h-40 outline-none shadow-inner bg-green-400 text-white placeholder:text-white' placeholder='Your message here' />
-                        <button className='text-white bg-green-600 rounded-lg w-32 mt-6 text-center py-2'>Submit</button>
-                    </div>
-                    <div className='col-span-2 md:col-span-1'>
-                        <p className='text-2xl'>Connect with me: </p>
-                        <div className='flex space-x-4 text-2xl mt-4'>
-                            <a href="https://github.com/Aagam-Jain-113/" aria-label="GitHub" target="_blank" className="transform hover:scale-125" rel="noreferrer">
-                                <BsGithub />
-                            </a>
-                            <a href="https://www.linkedin.com/in/aagam-jain113/" aria-label="Linkedin" target="_blank" className="transform hover:scale-125" rel="noreferrer">
-                                <BsLinkedin />
-                            </a>
-                            <a href="mailto:aagamjain113@gmail.com" className="transform hover:scale-125">
-                                <GoMail />
-                            </a>
-                            <a href="https://twitter.com/AagamJain113" aria-label="Twitter" target="_blank" className="transform hover:scale-125" rel="noreferrer">
-                                <BsTwitter />
-                            </a>
-                        </div>
-                        <PopupButton
-                            url="https://calendly.com/aagamjain113?primary_color=36e7f7"
-                            className="w-1/2 px-2 py-2 mt-12 text-white rounded-full bg-green-600 hover:bg-green-700"
-                            text="Lets connect!"
-                        />
-                    </div>
+        <div className='max-w-screen-lg px-10 lg:px-0 mx-auto mt-12 lg:mt-24' id="contact">
+            <hr className="h-0.5 bg-gray-300" />
+            <div className='text-center text-2xl my-6'>
+                <p>You can connect with me on any of the following platforms</p>
+                <div className='flex space-x-8 justify-center text-2xl mt-4'>
+                    <a href="https://github.com/Aagam-Jain-113/" aria-label="GitHub" target="_blank" className="transform hover:scale-125 duration-300" rel="noreferrer">
+                        <BsGithub />
+                    </a>
+                    <a href="https://www.linkedin.com/in/aagam-jain113/" aria-label="Linkedin" target="_blank" className="transform hover:scale-125 duration-300" rel="noreferrer">
+                        <BsLinkedin />
+                    </a>
+                    <a href="mailto:aagamjain113@gmail.com" className="transform hover:scale-125 duration-300">
+                        <GoMail />
+                    </a>
+                    <a href="https://twitter.com/AagamJain113" aria-label="Twitter" target="_blank" className="transform hover:scale-125 duration-300" rel="noreferrer">
+                        <BsTwitter />
+                    </a>
                 </div>
+                <p className='text-gray-400 my-10 text-sm'>&#169; Aagam Jain 2022 </p>
+                {/* <p className='mt-4 text-base '>or</p>
+                <p className='mt-2'>We can have a one-on-one meeting over a cup of coffee</p>
+                <PopupButton
+                    url="https://calendly.com/aagamjain113?primary_color=36e7f7"
+                    className="w-1/5 px-2 text-xl py-2 mt-6 text-white rounded-full bg-primary hover:bg-darker"
+                    text="Lets connect!"
+                /> */}
             </div>
-
         </div>
     )
 }
