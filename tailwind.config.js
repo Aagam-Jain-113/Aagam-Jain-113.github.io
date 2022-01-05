@@ -25,6 +25,9 @@ module.exports = {
       height: {
         41: "41%",
       },
+      boxShadow: {
+        current: "5px 5px 0px 0px rgb(81,168,121)",
+      },
     },
   },
   plugins: [],
