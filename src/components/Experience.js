@@ -12,33 +12,33 @@ function Experience() {
                 <div className='sm:col-span-1 border border-green-700 shadow-current shadow-green-600 rounded-lg p-6 col-span-2'>
                     <div className='flex items-center justify-between'>
                         <p className='font-light'>Jan 2022 - present</p>
-                        <img src={Logisy} alt="Logo" className='w-1/6' />
+                        <img src={Logisy} alt="Logo" className='w-1/5' />
                     </div>
-                    <p className='font-semibold text-lg'>Logisy</p>
+                    <a href="https://logisy.tech/" rel="noreferrer" target="_blank" className='font-semibold text-lg hover:underline'>Logisy</a>
                     <p className='mt-2'>Frontend Developer Intern</p>
                 </div>
                 <div className='sm:col-span-1 border border-gray-400 rounded-lg p-6 col-span-2'>
                     <div className='flex items-center justify-between'>
                         <p className='font-light'>Sept 2021 - Dec 2021</p>
-                        <img src={StartLadder} alt="Logo" className='w-1/6' />
+                        <img src={StartLadder} alt="Logo" className='w-1/5' />
                     </div>
-                    <p className='font-semibold mt-1 text-lg'>StartLadder</p>
+                    <a href="https://startladder.co/" target="_blank" rel="noreferrer" className='font-semibold text-lg hover:underline'>StartLadder</a>
                     <p className='mt-2'>Frontend Developer Intern</p>
                 </div>
                 <div className='sm:col-span-1 border border-gray-400 rounded-lg p-6 col-span-2'>
-                    <div className='flex items-center justify-between'>
+                    <div className='flex items-center mb-1 justify-between'>
                         <p className='font-light'>Aug 2021</p>
-                        <img src={Lemon8} alt="Logo" className='w-1/6' />
+                        <img src={Lemon8} alt="Logo" className='w-1/5' />
                     </div>
-                    <p className='font-semibold mt-1 text-lg'>Lemon8</p>
+                    <a href="https://lemon8.in/" target="_blank" rel="noreferrer" className='font-semibold text-lg hover:underline'>Lemon8</a>
                     <p className='mt-2'>Freelancer</p>
                 </div>
                 <div className='sm:col-span-1 border border-gray-400 rounded-lg p-6 col-span-2'>
-                    <div className='flex items-center justify-between'>
+                    <div className='flex items-center mb-2 justify-between'>
                         <p className='font-light'>May 2021 - Jul 2021</p>
-                        <img src={Tralearnsys} alt="Logo" className='w-1/6' />
+                        <img src={Tralearnsys} alt="Logo" className='w-1/5' />
                     </div>
-                    <p className='font-semibold mt-1 text-lg'>Tralearnsys</p>
+                    <a href="http://www.tralearnsys.com/" target="_blank" rel="noreferrer" className='font-semibold text-lg hover:underline'>Tralearnsys</a>
                     <p className='mt-2'>Frontend Developer Intern</p>
                 </div>
             </div>
