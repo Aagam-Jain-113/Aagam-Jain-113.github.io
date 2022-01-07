@@ -1,11 +1,9 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import Profile from '../assets/profile-pic.png'
+import Resume from '../assets/Aagam_Jain_Resume.pdf'
 
 function Hero() {
-    React.useEffect(() => {
-        import("@lottiefiles/lottie-player");
-    })
     return (
         <div className="text-2xl font-inter bg-gradient-to-b text-primary from-hero1 to-white lg:text-4xl py-20 px-10 lg:px-0 w-full">
             <div className='max-w-screen-lg mx-auto'>
@@ -21,19 +19,14 @@ function Hero() {
                                 }}
                             />
                         </p>
-                        <div className='mt-3 sm:mt-6'>
+                        <div className='my-3 sm:my-6'>
                             <p className='text-xl'>A Senior Year student pursuing Bachelor of Technology in Electronics and Communication from <span className='font-semibold'>BIT, Mesra.</span></p>
                             <p className='text-xl mt-2'>A <span className='font-semibold'>Coder</span> who focuses on writing clean, elegant and efficient code.</p>
+                            <p className='text-xl mt-2'>A <span className='font-semibold'>Designer</span> with passion for designing beautiful user experience designs.</p>
                         </div>
+                        <a href={Resume} className='bg-primary py-3 px-6 hover:bg-gray-700 text-xl text-white rounded-lg' download>Resume</a>
                     </div>
                     <div className='col-span-3 mt-6 sm:mt-0 mx-auto sm:col-span-1'>
-                        {/* <lottie-player
-                            id="firstLottie"
-                            autoplay
-                            loop
-                            mode="normal"
-                            src="https://assets6.lottiefiles.com/packages/lf20_1LhsaB.json"
-                        /> */}
                         <img src={Profile} alt="Profile" className='rounded-full w-3/4 sm:w-full mx-auto lg:mx-0 shadow-2xl' />
                     </div>
                 </div>
