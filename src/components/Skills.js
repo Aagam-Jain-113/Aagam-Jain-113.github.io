@@ -19,7 +19,7 @@ function Skills() {
 
     return (
         <div id="skills">
-            <div className='max-w-screen-lg px-10 lg:px-0 mx-auto'>
+            <div className='max-w-screen-lg px-10 pt-10 lg:pt-20 lg:px-0 mx-auto'>
                 <p className='text-2xl md:text-4xl text-primary font-semibold'>Skills</p>
                 <div className='grid grid-cols-2 gap-6 mt-12'>
                     <div className='sm:col-span-1 border border-gray-400 rounded-lg p-6 col-span-2'>
