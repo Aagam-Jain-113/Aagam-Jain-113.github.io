@@ -14,7 +14,7 @@ function Contact() {
                     text="Lets meet over a cup of coffee ☕!"
                 />
                 <p className='my-3 text-base'>or</p>
-                <p>You can connect with me on:</p>
+                <p className='text-xl'>Share your ideas with me on:</p>
                 <div className='flex space-x-8 justify-center text-2xl mt-4'>
                     <a href="https://www.linkedin.com/in/aagam-jain113/" aria-label="Linkedin" target="_blank" className="transform hover:scale-125 duration-300" rel="noreferrer">
                         <BsLinkedin />

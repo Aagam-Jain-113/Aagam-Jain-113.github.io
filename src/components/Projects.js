@@ -20,7 +20,7 @@ function Projects() {
     // const [project, setProject] = React.useState(Aidzee)
     return (
         <div className='pt-10 lg:pt-20' id="projects">
-            <div className='max-w-screen-lg px-10 lg:px-0 ml-auto'>
+            <div className='px-10 lg:pl-[14.5%] lg:pr-0'>
                 <p className='text-2xl md:text-4xl text-primary font-semibold'>Projects</p>
                 <div className="mt-10 flex">
                     <Swiper slidesPerView={3} spaceBetween={30} freeMode={true} pagination={{

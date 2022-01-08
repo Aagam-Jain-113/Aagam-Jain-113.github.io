@@ -42,7 +42,7 @@ function Experience() {
                     <p className='mt-2'>Frontend Developer Intern</p>
                 </div>
             </div>
-            <p className='mt-6 ml-2 text-sm'>*For more details, check my <a className='text-blue-700 underline' href="https://www.linkedin.com/in/aagam-jain113/" target="_blank" rel="noreferrer">Linkedin</a></p>
+            <p className='mt-6 ml-2 text-gray-400 italic text-sm'>*For more details, check my <a className='text-blue-700 underline' href="https://www.linkedin.com/in/aagam-jain113/" target="_blank" rel="noreferrer">Linkedin</a></p>
         </div>
     )
 }
