@@ -5,6 +5,8 @@ import Invoice from '../assets/invoice.png'
 import Speakable from '../assets/speakable.png'
 import Whatsup from '../assets/whatsup.png'
 import StyleClub from '../assets/styleclub.png'
+import Rubex from '../assets/rubex.png'
+import Trend from '../assets/trendpvc.png'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -17,77 +19,154 @@ import { BsBoxArrowUpRight, BsGithub } from 'react-icons/bs'
 SwiperCore.use([FreeMode]);
 
 function Projects() {
-    // const [project, setProject] = React.useState(Aidzee)
+    const [index, setIndex] = React.useState(1);
+    const tabItems = [
+        {
+            id: 1,
+            title: "Personal",
+        },
+        {
+            id: 2,
+            title: "Freelance",
+        }
+    ]
+    const TabItemComponent = ({
+        title = '',
+        onItemClicked = () => console.error('You passed no action to the component'),
+        isActive = false,
+    }) => {
+        return (
+            <div className={isActive ? 'py-2 px-6 bg-primary rounded-full text-white' : 'py-2 px-6 text-primary hover:text-black'} onClick={onItemClicked}>
+                <p>{title}</p>
+            </div>
+        )
+    };
     return (
         <div className='pt-10 lg:pt-20' id="projects">
             <div className='px-10 lg:pl-[14.5%] lg:pr-0'>
                 <p className='text-2xl md:text-4xl text-primary font-semibold'>Projects</p>
+                <div className='flex cursor-pointer mt-10 font-medium bg-gray-200 w-fit rounded-full space-x-4'>
+                    {tabItems.map(({ id, title }) =>
+                        <TabItemComponent
+                            key={title}
+                            title={title}
+                            onItemClicked={() => setIndex(id)}
+                            isActive={index === id}
+                        />
+                    )}
+                </div>
                 <div className="mt-10 flex">
-                    <Swiper slidesPerView={3} spaceBetween={30} freeMode={true} pagination={{
-                        "clickable": true
-                    }} className="mySwiper">
-                        <SwiperSlide className='rounded-lg pt-10 bg-opacity-20 bg-purple-100 border border-purple-200'>
-                            <div className='px-6 h-2/3'>
-                                <p className='font-semibold text-2xl'>Style Club</p>
-                                <p className='mt-2'>An e-commerce website with user authentication and dashboard</p>
-                                <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>Next.js, TailwindCSS, MongoDB</span> </p>
-                                <div className='mt-8 flex'>
-                                    <a href="http://style-club.vercel.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-purple-200 px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
-                                    <a href="https://github.com/Aagam-Jain-113/style-club" target="_blank" rel="noopener noreferrer" className='py-2 flex items-center w-fit bg-purple-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                    {index === 1 &&
+                        <Swiper slidesPerView={1} spaceBetween={10} freeMode={true} pagination={{
+                            "clickable": true
+                        }} breakpoints={{
+                            "768": {
+                                "slidesPerView": 1,
+                                "spaceBetween": 20
+                            },
+                            "1024": {
+                                "slidesPerView": 3,
+                                "spaceBetween": 20
+                            }
+                        }} className="mySwiper">
+                            <SwiperSlide className='rounded-lg pt-10 bg-opacity-20 bg-purple-100 border border-purple-200'>
+                                <div className='px-6 h-2/3'>
+                                    <p className='font-semibold text-2xl'>Style Club</p>
+                                    <p className='mt-2'>An e-commerce website with user authentication and dashboard</p>
+                                    <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>Next.js, TailwindCSS, MongoDB</span> </p>
+                                    <div className='mt-8 flex'>
+                                        <a href="http://style-club.vercel.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-purple-500 hover:bg-purple-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
+                                        <a href="https://github.com/Aagam-Jain-113/style-club" target="_blank" rel="noopener noreferrer" className='py-2 flex items-center w-fit text-purple-600 hover:bg-purple-300 font-medium bg-purple-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src={StyleClub} alt="Preview" className='w-full' />
-                        </SwiperSlide>
-                        <SwiperSlide className='rounded-lg pt-10 bg-blue-100 bg-opacity-20 border border-blue-200'>
-                            <div className='px-6 h-2/3'>
-                                <p className='font-semibold text-2xl'>Invoice Generator</p>
-                                <p className='mt-2'>An app where you can generate and store the invoice locally.</p>
-                                <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>React.js, Firebase</span></p>
-                                <div className='mt-8 flex'>
-                                    <a href="https://aagam-jain-113.github.io/invoice-generator/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-blue-200 px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
-                                    <a href="https://github.com/Aagam-Jain-113/invoice-generator" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center bg-blue-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                <img src={StyleClub} alt="Preview" className='w-full' />
+                            </SwiperSlide>
+                            <SwiperSlide className='rounded-lg pt-10 bg-blue-100 bg-opacity-20 border border-blue-200'>
+                                <div className='px-6 h-2/3'>
+                                    <p className='font-semibold text-2xl'>Invoice Generator</p>
+                                    <p className='mt-2'>An app where you can generate and store the invoice locally.</p>
+                                    <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>React.js, Firebase</span></p>
+                                    <div className='mt-8 flex'>
+                                        <a href="https://aagam-jain-113.github.io/invoice-generator/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-blue-500 hover:bg-blue-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
+                                        <a href="https://github.com/Aagam-Jain-113/invoice-generator" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center text-blue-600 hover:bg-blue-300 font-medium bg-blue-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src={Invoice} alt="Preview" className='w-full ' />
-                        </SwiperSlide>
-                        <SwiperSlide className='rounded-lg pt-10 bg-green-100 bg-opacity-20 border border-green-200'>
-                            <div className='px-6 h-2/3'>
-                                <p className='font-semibold text-2xl'>Whatsup</p>
-                                <p className='mt-2'>A clone of web version of whatsapp with firebase authentication</p>
-                                <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>React.js, Firebase</span></p>
-                                <div className='mt-8 flex'>
-                                    <a href="https://whatsupchat.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-green-200 px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
-                                    <a href="https://github.com/Aagam-Jain-113/whatsapp-clone" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center bg-green-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                <img src={Invoice} alt="Preview" className='w-full ' />
+                            </SwiperSlide>
+                            <SwiperSlide className='rounded-lg pt-10 bg-green-100 bg-opacity-20 border border-green-200'>
+                                <div className='px-6 h-2/3'>
+                                    <p className='font-semibold text-2xl'>Whatsup</p>
+                                    <p className='mt-2'>A clone of web version of whatsapp with firebase authentication</p>
+                                    <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>React.js, Firebase</span></p>
+                                    <div className='mt-8 flex'>
+                                        <a href="https://whatsupchat.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-green-500 hover:bg-green-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
+                                        <a href="https://github.com/Aagam-Jain-113/whatsapp-clone" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center bg-green-200 text-green-600 hover:bg-green-300 font-medium px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src={Whatsup} alt="Preview" className='w-full ' />
-                        </SwiperSlide>
-                        <SwiperSlide className='rounded-lg pt-10 bg-green-100 bg-opacity-20 border border-blue-200'>
-                            <div className='px-6 h-2/3'>
-                                <p className='font-semibold text-2xl'>Aidzee</p>
-                                <p className='mt-2'>This is a project about how we connect with others</p>
-                                <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>HTML,CSS,JavaScript,Node.js</span></p>
-                                <div className='mt-8 flex'>
-                                    <a href="https://aidzee.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-blue-200 px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
-                                    <a href="https://github.com/Aagam-Jain-113/AidZee" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center bg-blue-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                <img src={Whatsup} alt="Preview" className='w-full ' />
+                            </SwiperSlide>
+                            <SwiperSlide className='rounded-lg pt-10 bg-green-100 bg-opacity-20 border border-blue-200'>
+                                <div className='px-6 h-2/3'>
+                                    <p className='font-semibold text-2xl'>Aidzee</p>
+                                    <p className='mt-2'>This is a project about how we connect with others</p>
+                                    <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>HTML,CSS,JavaScript,Node.js</span></p>
+                                    <div className='mt-8 flex'>
+                                        <a href="https://aidzee.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-blue-500 hover:bg-blue-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
+                                        <a href="https://github.com/Aagam-Jain-113/AidZee" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center text-blue-600 hover:bg-blue-300 font-medium bg-blue-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src={Aidzee} alt="Preview" className='w-full ' />
-                        </SwiperSlide>
-                        <SwiperSlide className='rounded-lg pt-10 bg-green-100 bg-opacity-20 border border-green-200'>
-                            <div className='px-6 h-2/3'>
-                                <p className='font-semibold text-2xl'>Speakable</p>
-                                <p className='mt-2'>A web app for the Dumb who can record their hand gestures and convert to Sound.</p>
-                                <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>JavaScript, Python, TensorFlow</span></p>
-                                <div className='mt-8 flex'>
-                                    <a href="https://speakableai.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-green-200 px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
-                                    <a href="https://github.com/Aagam-Jain-113/Speakable" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center bg-green-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                <img src={Aidzee} alt="Preview" className='w-full ' />
+                            </SwiperSlide>
+                            <SwiperSlide className='rounded-lg pt-10 bg-green-100 bg-opacity-20 border border-green-200'>
+                                <div className='px-6 h-2/3'>
+                                    <p className='font-semibold text-2xl'>Speakable</p>
+                                    <p className='mt-2'>A web app for the Dumb who can record their hand gestures and convert to Sound.</p>
+                                    <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>JavaScript, Python, TensorFlow</span></p>
+                                    <div className='mt-8 flex'>
+                                        <a href="https://speakableai.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-green-500 hover:bg-blue-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
+                                        <a href="https://github.com/Aagam-Jain-113/Speakable" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center bg-green-200 text-green-600 hover:bg-green-300 font-medium px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src={Speakable} alt="Preview" className='w-full ' />
-                        </SwiperSlide>
-                        <SwiperSlide className='rounded-lg px-6 pt-10 bg-purple-100 bg-opacity-20 border border-purple-200'>Project 6</SwiperSlide>
-                    </Swiper>
+                                <img src={Speakable} alt="Preview" className='w-full ' />
+                            </SwiperSlide>
+                            {/* <SwiperSlide className='rounded-lg px-6 pt-10 bg-purple-100 bg-opacity-20 border border-purple-200'>Project 6</SwiperSlide> */}
+                        </Swiper>
+                    }
+                    {index === 2 &&
+                        <Swiper slidesPerView={1} spaceBetween={10} freeMode={true} pagination={{
+                            "clickable": true
+                        }} breakpoints={{
+                            "768": {
+                                "slidesPerView": 2,
+                                "spaceBetween": 20
+                            },
+                        }} className="mySwiper">
+                            <SwiperSlide className='rounded-lg pt-10 bg-opacity-20 bg-purple-100 border border-purple-200'>
+                                <div className='px-6 h-1/2'>
+                                    <p className='font-semibold text-2xl'>Rubex</p>
+                                    <p className='mt-2'>Figma converted into React code.</p>
+                                    <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>React.js, TailwindCSS</span> </p>
+                                    <div className='mt-8 flex'>
+                                        <a href="https://rubexfreelance.netlify.app" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-purple-500 hover:bg-purple-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
+                                        <a href="https://github.com/Aagam-Jain-113/rubex" target="_blank" rel="noopener noreferrer" className='py-2 flex items-center w-fit text-purple-600 hover:bg-purple-300 font-medium bg-purple-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                    </div>
+                                </div>
+                                <img src={Rubex} alt="Preview" className='w-full mt-6 h-1/2' />
+                            </SwiperSlide>
+                            <SwiperSlide className='rounded-lg pt-10 bg-blue-100 bg-opacity-20 border border-blue-200'>
+                                <div className='px-6 h-1/2'>
+                                    <p className='font-semibold text-2xl'>Trend PVC</p>
+                                    <p className='mt-2'>A website created for a local businessman under Lemon8.</p>
+                                    <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>React.js, TailwindCSS</span></p>
+                                    <div className='mt-8 flex'>
+                                        <a href="https://trendpvc.com/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-blue-500 hover:bg-blue-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
+                                        <a href="https://github.com/lemon-8/trend-laminates/tree/react" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center text-blue-600 hover:bg-blue-300 font-medium bg-blue-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
+                                    </div>
+                                </div>
+                                <img src={Trend} alt="Preview" className='w-full mt-6 h-1/2' />
+                            </SwiperSlide>
+                        </Swiper>
+                    }
                 </div>
                 {/* <div className='grid grid-cols-2  md:gap-10 items-center'>
                     <div className='md:col-span-1 projects flex flex-row w-full overflow-scroll md:overflow-auto md:flex-col col-span-2'>
