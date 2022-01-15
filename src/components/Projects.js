@@ -72,11 +72,11 @@ function Projects() {
                             }
                         }} className="mySwiper">
                             <SwiperSlide className='rounded-lg pt-10 bg-opacity-20 bg-purple-100 border border-purple-200'>
-                                <div className='px-6 h-1/2'>
+                                <div className='px-6 h-2/3 sm:h-1/2'>
                                     <p className='font-semibold text-2xl'>Style Club</p>
                                     <p className='mt-2'>An e-commerce website with user authentication and dashboard</p>
                                     <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>Next.js, TailwindCSS, MongoDB</span> </p>
-                                    <div className='mt-8 flex absolute bottom-[50%] lg:bottom-[45%]'>
+                                    <div className='my-4 flex absolute bottom-[35%] md:bottom-[50%] lg:bottom-[45%]'>
                                         <a href="http://style-club.vercel.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-purple-500 hover:bg-purple-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
                                         <a href="https://github.com/Aagam-Jain-113/style-club" target="_blank" rel="noopener noreferrer" className='py-2 flex items-center w-fit text-purple-600 hover:bg-purple-300 font-medium bg-purple-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
                                     </div>
@@ -85,11 +85,11 @@ function Projects() {
                                 <img src={StyleClub} alt="Preview" className='w-full lg:absolute bottom-0' />
                             </SwiperSlide>
                             <SwiperSlide className='rounded-lg pt-10 bg-blue-100 bg-opacity-20 border border-blue-200'>
-                                <div className='px-6 h-1/2'>
+                                <div className='px-6 h-2/3 sm:h-1/2'>
                                     <p className='font-semibold text-2xl'>Invoice Generator</p>
                                     <p className='mt-2'>An app where you can generate and store the invoice locally.</p>
                                     <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>React.js, Firebase</span></p>
-                                    <div className='mt-8 flex absolute bottom-[50%] lg:bottom-[45%]'>
+                                    <div className='my-4 flex absolute bottom-[35%] md:bottom-[50%] lg:bottom-[45%]'>
                                         <a href="https://aagam-jain-113.github.io/invoice-generator/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-blue-500 hover:bg-blue-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
                                         <a href="https://github.com/Aagam-Jain-113/invoice-generator" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center text-blue-600 hover:bg-blue-300 font-medium bg-blue-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
                                     </div>
@@ -98,11 +98,11 @@ function Projects() {
                                 <img src={Invoice} alt="Preview" className='w-full lg:absolute bottom-0' />
                             </SwiperSlide>
                             <SwiperSlide className='rounded-lg h-[600px] pt-10 bg-green-100 bg-opacity-20 border border-green-200'>
-                                <div className='px-6 h-1/2'>
+                                <div className='px-6 h-2/3 sm:h-1/2'>
                                     <p className='font-semibold text-2xl'>Whatsup</p>
                                     <p className='mt-2'>A clone of web version of whatsapp with firebase authentication</p>
                                     <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>React.js, Firebase</span></p>
-                                    <div className='mt-8 flex absolute bottom-[50%] lg:bottom-[45%]'>
+                                    <div className='my-4 flex absolute bottom-[35%] md:bottom-[50%] lg:bottom-[45%]'>
                                         <a href="https://whatsupchat.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-green-500 hover:bg-green-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
                                         <a href="https://github.com/Aagam-Jain-113/whatsapp-clone" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center bg-green-200 text-green-600 hover:bg-green-300 font-medium px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
                                     </div>
@@ -111,11 +111,11 @@ function Projects() {
                                 <img src={Whatsup} alt="Preview" className='w-full lg:absolute bottom-0' />
                             </SwiperSlide>
                             <SwiperSlide className='rounded-lg pt-10 bg-green-100 bg-opacity-20 border border-blue-200'>
-                                <div className='px-6 h-1/2'>
+                                <div className='px-6 h-2/3 sm:h-1/2'>
                                     <p className='font-semibold text-2xl'>Aidzee</p>
                                     <p className='mt-2'>This is a project about how we connect with others</p>
                                     <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>HTML,CSS,JavaScript,Node.js</span></p>
-                                    <div className='mt-8 flex absolute bottom-[50%] lg:bottom-[45%]'>
+                                    <div className='my-4 flex absolute bottom-[35%] md:bottom-[50%] lg:bottom-[45%]'>
                                         <a href="https://aidzee.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-blue-500 hover:bg-blue-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
                                         <a href="https://github.com/Aagam-Jain-113/AidZee" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center text-blue-600 hover:bg-blue-300 font-medium bg-blue-200 px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
                                     </div>
@@ -124,11 +124,11 @@ function Projects() {
                                 <img src={Aidzee} alt="Preview" className='w-full lg:absolute bottom-0' />
                             </SwiperSlide>
                             <SwiperSlide className='rounded-lg relative pt-10 bg-green-100 bg-opacity-20 border border-green-200'>
-                                <div className='px-6 h-1/2'>
+                                <div className='px-6 h-2/3 sm:h-1/2'>
                                     <p className='font-semibold text-2xl'>Speakable</p>
                                     <p className='mt-2'>A web app for Dumb to record their hand gestures and convert to Sound.</p>
                                     <p className='mt-2'><span className='font-semibold'>Tech Stack:</span> <span className='italic text-sm font-light'>JavaScript, Python, TensorFlow</span></p>
-                                    <div className='mt-8 flex absolute bottom-[50%] lg:bottom-[45%]'>
+                                    <div className='my-4 flex absolute bottom-[35%] md:bottom-[50%] lg:bottom-[45%]'>
                                         <a href="https://speakableai.netlify.app/" target="_blank" rel="noopener noreferrer" className='mr-2 flex w-fit items-center py-2 bg-green-500 hover:bg-blue-400 text-white font-medium px-4 rounded-md'>Live <BsBoxArrowUpRight className='ml-2' /></a>
                                         <a href="https://github.com/Aagam-Jain-113/Speakable" target="_blank" rel="noopener noreferrer" className='py-2 flex w-fit items-center bg-green-200 text-green-600 hover:bg-green-300 font-medium px-4 rounded-md'>GitHub <BsGithub className='ml-2' /></a>
                                     </div>
