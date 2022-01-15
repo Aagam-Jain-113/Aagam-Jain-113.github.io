@@ -24,6 +24,7 @@ module.exports = {
       },
       height: {
         41: "41%",
+        420 : "420px",
       },
       boxShadow: {
         current: "5px 5px 0px 0px rgb(81,168,121)",
