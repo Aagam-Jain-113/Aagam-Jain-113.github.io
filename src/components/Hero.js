@@ -23,6 +23,7 @@ function Hero() {
                             <p className='text-xl mt-2'>A <span className='font-semibold'>Coder</span> who focuses on writing clean, elegant and efficient code.</p>
                             <p className='text-xl mt-2'>A <span className='font-semibold'>Designer</span> with passion for designing beautiful user experience designs.</p>
                         </div>
+                        <a href="#experience" className='flex text-lg text-center py-2 text-white w-32 bg-primary px-6 rounded-lg py-1'>My Work</a>
                     </div>
                     <div className='col-span-3 mt-6 sm:mt-0 mx-auto sm:col-span-1'>
                         <img src={Profile} alt="Profile" className='rounded-full w-3/4 sm:w-full mx-auto lg:mx-0 shadow-2xl' />

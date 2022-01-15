@@ -25,17 +25,17 @@ function Navbar() {
                 </div>
                 {isOpen ?
                     <div onClick={()=>setIsOpen(!isOpen)} className={'space-y-5 mt-1 py-4 bg-white text-primary text-sm text-center items-center justify-center flex flex-col w-full relative'}>
-                        <a href="#skills">Skills</a>
                         <a href="#experience">Experience</a>
                         <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
                         <a href="#contact">Contact</a>
                     </div>
                     :
                     <>
                         <div className='hidden md:flex text-primary font-semibold text-lg space-x-16'>
-                            <a href="#skills">Skills</a>
                             <a href="#experience">Experience</a>
                             <a href="#projects">Projects</a>
+                            <a href="#skills">Skills</a>
                         </div>
                         <a href="#contact" className='hidden md:flex text-lg text-white bg-primary px-6 rounded-2xl py-1'>Contact</a>
                     </>
