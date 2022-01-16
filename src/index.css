@@ -11,33 +11,3 @@
     scroll-behavior: smooth;
     font-family: 'Inter',sans-serif;
 }
-.projects{
-    margin-right: 40px;
-}
-.projects::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
-}
-
-.projects::-webkit-scrollbar
-{
-    width: 5px;
-	background-color: #F5F5F5;
-}
-
-.projects::-webkit-scrollbar-thumb
-{
-	background-color: rgb(34,197,94);
-	border: 2px solid rgb(34,197,94);
-    border-radius: 10px;
-}
-
-.projects{
-    max-height: 70vh;
-}
-
-.project{
-    min-width: 300px;
-    max-height: 250px;
-}

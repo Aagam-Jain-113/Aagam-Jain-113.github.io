@@ -6,7 +6,7 @@ import Tralearnsys from '../assets/tralearnsys.jpg'
 
 function Experience() {
     return (
-        <div className='max-w-screen-lg px-10 mt-24 lg:mt-12 lg:px-0 mx-auto' id="experience">
+        <div className='max-w-screen-lg px-10 mt-32 lg:mt-12 lg:px-0 mx-auto' id="experience">
             <p className='text-2xl md:text-4xl text-primary font-semibold'>Experience</p>
             <div className='grid grid-cols-2 gap-6 mt-12'>
                 <div className='sm:col-span-1 border border-green-700 shadow-current shadow-green-600 rounded-lg p-6 col-span-2'>
