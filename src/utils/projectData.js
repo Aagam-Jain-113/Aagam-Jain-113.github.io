@@ -15,7 +15,7 @@ const data = {
             liveLink: "https://style-club.vercel.app/",
             githubLink: "https://github.com/Aagam-Jain-113/style-club",
             preview: StyleClub,
-            color: "purple"
+            theme: "purple"
         },
         {
             title: "Invoice Generator",
@@ -24,7 +24,7 @@ const data = {
             liveLink: "https://aagam-jain-113.github.io/invoice-generator/",
             githubLink: "https://github.com/Aagam-Jain-113/invoice-generator",
             preview: Invoice,
-            color: "blue"
+            theme: "blue"
         },
         {
             title: "Whatsup",
@@ -33,7 +33,7 @@ const data = {
             liveLink: "https://whatsupchat.netlify.app/",
             githubLink: "https://github.com/Aagam-Jain-113/whatsapp-clone",
             preview: Whatsup,
-            color: "green"
+            theme: "green"
         },
         {
             title: "Aidzee",
@@ -42,7 +42,7 @@ const data = {
             liveLink: "https://aidzee.netlify.app/",
             githubLink: "https://github.com/Aagam-Jain-113/AidZee",
             preview: Aidzee,
-            color: "purple"
+            theme: "purple"
         },
         {
             title: "Speakable",
@@ -51,7 +51,7 @@ const data = {
             liveLink: "https://speakableai.netlify.app/",
             githubLink: "https://github.com/Aagam-Jain-113/Speakable",
             preview: Speakable,
-            color: "blue"
+            theme: "blue"
         }
     ],
     freelanceProjects: [
@@ -62,7 +62,7 @@ const data = {
             liveLink: "https://rubexfreelance.netlify.app",
             githubLink: "https://github.com/Aagam-Jain-113/rubex",
             preview: Rubex,
-            color: "purple"
+            theme: "purple"
         },
         {
             title: "Trend PVC",
@@ -71,7 +71,7 @@ const data = {
             liveLink: "https://trendpvc.com/",
             githubLink: "https://github.com/lemon-8/trend-laminates/tree/react",
             preview: Trend,
-            color: "blue"
+            theme: "blue"
         }
     ]
 }
