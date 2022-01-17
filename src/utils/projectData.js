@@ -57,7 +57,7 @@ const data = {
     freelanceProjects: [
         {
             title: "Rubex",
-            description: "Figma converted into React code.",
+            description: "Rubex is a budding e-learning company to make learning affordable & accessible",
             tech: "React.js, TailwindCSS",
             liveLink: "https://rubexfreelance.netlify.app",
             githubLink: "https://github.com/Aagam-Jain-113/rubex",
@@ -66,7 +66,7 @@ const data = {
         },
         {
             title: "Trend PVC",
-            description: "A website created for a local businessman under Lemon8.",
+            description: "Developed a website for a local business of interior designs under Lemon8.",
             tech: "React.js, TailwindCSS",
             liveLink: "https://trendpvc.com/",
             githubLink: "https://github.com/lemon-8/trend-laminates/tree/react",

@@ -9,8 +9,6 @@ module.exports = {
         primary: "#303941",
       },
       fontFamily: {
-        "roboto": "Roboto",
-        "poppins": "Poppins",
         "inter":"Inter",
       },
       width: {
