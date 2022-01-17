@@ -1,29 +1,33 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class', 
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
     extend: {
       colors:{
-        blue: {
-          light: '#4660AC',
-          DEFAULT: '#36E7F7',
-          dark: '#0A236D',
-          darker: '#3f569a'
-        },
-        offwhite: '#f5f5f5',
-        dark:{
-          DEFAULT: "#010101",
-          100: "#0a0b1e",
-          200: "#16181d",
-          500: "#0f1115",
-          700: "#202125",
-        },
-      }
+        hero1: "#e8efee",
+        primary: "#303941",
+      },
+      fontFamily: {
+        "inter":"Inter",
+      },
+      width: {
+        74: "74%",
+      },
+      inset: {
+        16: "66px",
+        24: "100px",
+        21: "20.5%",
+        15: "13%",
+      },
+      height: {
+        41: "41%",
+        420 : "420px",
+      },
+      boxShadow: {
+        current: "5px 5px 0px 0px rgb(81,168,121)",
+      },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }
