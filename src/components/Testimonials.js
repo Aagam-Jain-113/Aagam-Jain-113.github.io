@@ -15,7 +15,7 @@ SwiperCore.use([FreeMode,Navigation]);
 
 function Testimonials() {
     return (
-        <div className='pt-10 lg:pt-20' id="projects">
+        <div className='pt-10 lg:pt-20' id="testimonials">
             <div className='px-10 lg:px-0 max-w-screen-lg mx-auto'>
                 <p className='text-2xl md:text-4xl text-primary font-semibold'>Testimonials</p>
                 <Swiper slidesPerView={1} breakpoints={{

@@ -32,10 +32,11 @@ function Navbar() {
                     </div>
                     :
                     <>
-                        <div className='hidden md:flex text-primary font-semibold text-lg space-x-16'>
+                        <div className='hidden md:flex text-primary font-semibold text-lg md:space-x-5 lg:space-x-16'>
                             <a href="#experience">Experience</a>
                             <a href="#projects">Projects</a>
                             <a href="#skills">Skills</a>
+                            <a href="#testimonials">Testimonials</a>
                         </div>
                         <a href="#contact" className='hidden md:flex text-lg text-white bg-primary px-6 rounded-2xl py-1'>Contact</a>
                     </>
